@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="paklegal2020.pl.paklegal.ClientSide.LawyerBooking">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:cardCornerRadius="0dp"
+        app:cardBackgroundColor="@color/colorWhite">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:padding="10dp"
+                android:tint="@color/colorAccent"
+                app:srcCompat="@drawable/ic_arrow_back_black_24dp"
+                android:id="@+id/backButton"
+                android:layout_width="50dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/lName"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/callButton"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:padding="10dp"
+                android:tint="@color/colorAccent"
+                app:srcCompat="@drawable/ic_phone_black_24dp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <FrameLayout
+        android:padding="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:alpha="0.05"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/logo_copy"/>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="5dp">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:orientation="horizontal">
+                                <ImageView
+                                    android:id="@+id/card_image"
+                                    android:layout_width="100dp"
+                                    android:layout_height="match_parent" />
+
+                                <LinearLayout
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="5dp"
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_weight="1"
+                                        android:id="@+id/card_name"
+                                        android:textSize="18dp"
+                                        android:gravity="center|left"
+                                        android:textColor="@color/colorBlack"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent" />
+
+                                    <LinearLayout
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal">
+                                        <ImageView
+                                            android:id="@+id/rate1"
+                                            android:layout_width="20dp"
+                                            app:srcCompat="@drawable/empty_star"
+                                            android:layout_height="20dp" />
+                                        <ImageView
+                                            android:id="@+id/rate2"
+                                            android:layout_width="20dp"
+                                            app:srcCompat="@drawable/empty_star"
+                                            android:layout_height="20dp" />
+                                        <ImageView
+                                            android:id="@+id/rate3"
+                                            android:layout_width="20dp"
+                                            app:srcCompat="@drawable/empty_star"
+                                            android:layout_height="20dp" />
+                                        <ImageView
+                                            android:id="@+id/rate4"
+                                            android:layout_width="20dp"
+                                            app:srcCompat="@drawable/empty_star"
+                                            android:layout_height="20dp" />
+                                        <ImageView
+                                            android:id="@+id/rate5"
+                                            android:layout_width="20dp"
+                                            app:srcCompat="@drawable/empty_star"
+                                            android:layout_height="20dp" />
+                                        <TextView
+                                            android:layout_weight="1"
+                                            android:id="@+id/card_rating_count"
+                                            android:gravity="center|left"
+                                            android:textColor="#414141"
+                                            android:textSize="14sp"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="20dp" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginRight="20dp"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_weight="1"
+                                            android:id="@+id/card_mostbooked"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="25dp"
+                                            android:drawableStart="@drawable/fill_star"
+                                            android:drawableTint="@color/colorWhite"
+                                            android:text="Most Booked"
+                                            android:gravity="center"
+                                            android:layout_marginRight="3dp"
+                                            android:textColor="@color/colorWhite"
+                                            android:background="@drawable/btn_card_design"
+                                            android:drawableLeft="@drawable/fill_star" />
+                                        <TextView
+                                            android:layout_weight="1"
+                                            android:id="@+id/card_topreviwed"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="25dp"
+                                            android:drawableStart="@drawable/fill_star"
+                                            android:drawableTint="@color/colorWhite"
+                                            android:text="Most Review"
+                                            android:layout_marginLeft="3dp"
+                                            android:gravity="center"
+                                            android:textColor="@color/colorWhite"
+                                            android:background="@drawable/btn_card_design"
+                                            android:drawableLeft="@drawable/fill_star" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="10dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:text="Categories:"
+                                    android:textSize="18dp"
+                                    android:textColor="#2e2e2e"
+                                    android:layout_marginTop="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+                                <TextView
+                                    android:id="@+id/card_categories"
+                                    android:textSize="17dp"
+                                    android:textColor="#434343"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:text="Education:"
+                                    android:textSize="18dp"
+                                    android:textColor="#2e2e2e"
+                                    android:layout_marginTop="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+                                <TextView
+                                    android:id="@+id/card_education"
+                                    android:textSize="17dp"
+                                    android:textColor="#434343"
+                                    android:layout_marginTop="3dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:text="Note:"
+                                    android:textSize="18dp"
+                                    android:textColor="#2e2e2e"
+                                    android:layout_marginTop="3dp"
+                                    android:textStyle="bold"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+                                <TextView
+                                    android:id="@+id/card_consult"
+                                    android:textSize="17dp"
+                                    android:textColor="#434343"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="3dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+
+                                <TextView
+                                    android:id="@+id/card_available"
+                                    android:gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:textColor="#517291"
+                                    android:paddingHorizontal="10dp"
+                                    android:background="@drawable/btn_card_des"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="25dp" />
+
+                                <Button
+                                    android:id="@+id/card_chat"
+                                    android:layout_marginTop="15dp"
+                                    android:textColor="@color/colorWhite"
+                                    android:text="Chat with Lawyer"
+                                    android:layout_marginHorizontal="10dp"
+                                    android:background="@drawable/btn_style"
+                                    android:layout_width="match_parent"
+                                    android:layout_marginBottom="8dp"
+                                    android:layout_height="40dp" />
+
+                                <Button
+                                    android:id="@+id/card_book"
+                                    android:layout_marginTop="15dp"
+                                    android:textColor="@color/colorWhite"
+                                    android:text="Book Appointment"
+                                    android:layout_marginHorizontal="10dp"
+                                    android:background="@drawable/btn_style"
+                                    android:layout_width="match_parent"
+                                    android:layout_marginBottom="8dp"
+                                    android:layout_height="40dp" />
+
+                                <View
+                                    android:background="#616161"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0.5dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+        </ScrollView>
+
+    </FrameLayout>
+
+
+</FrameLayout>

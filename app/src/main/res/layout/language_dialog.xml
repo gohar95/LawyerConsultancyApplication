@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/pdd"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#eaeaea"
+        android:gravity="center|left"
+        android:paddingLeft="10dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/logo_copy" />
+
+        <TextView
+            android:id="@+id/aaa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:gravity="center"
+            android:text="Select Language"
+            android:textAllCaps="true"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/aaa"
+            android:layout_marginLeft="50dp"
+            android:gravity="center"
+            android:text="Select Speaking Language"
+            android:textColor="@color/dot_dark_screen4"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pdd"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/lang1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorPrimaryDark"
+            android:checked="true"
+            android:paddingLeft="15dp"
+            android:text="Urdu"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/lang2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:buttonTint="@color/colorPrimaryDark"
+            android:paddingLeft="15dp"
+            android:text="English"
+            android:textSize="18sp" />
+
+
+        <CheckBox
+            android:id="@+id/lang3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:buttonTint="@color/colorPrimaryDark"
+            android:paddingLeft="15dp"
+            android:text="Chinese"
+            android:textSize="18sp" />
+
+
+        <CheckBox
+            android:id="@+id/lang4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:buttonTint="@color/colorPrimaryDark"
+            android:paddingLeft="15dp"
+            android:text="Aarabic"
+            android:textSize="18sp" />
+
+
+        <CheckBox
+            android:id="@+id/lang5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:buttonTint="@color/colorPrimaryDark"
+            android:paddingLeft="15dp"
+            android:text="British"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</RelativeLayout>

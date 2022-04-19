@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/paklegal_back"
+    tools:context=".ClientSide.BookingActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="27dp"
+        android:text="Add Your"
+        android:textColor="@color/colorBlack"
+        android:textSize="25sp"
+        android:id="@+id/textView3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:text="Case Request"
+        android:textColor="@color/colorBlack"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="125dp"
+        android:layout_marginBottom="30dp"
+        app:cardElevation="7dp"
+        app:cardBackgroundColor="@color/colorWhite"
+        app:cardCornerRadius="15dp"
+        android:background="@color/colorWhite"
+        android:layout_marginHorizontal="25dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Client Name:"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:drawableLeft="@drawable/ic_licence"
+                    android:drawablePadding="10dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorAccent"
+                    android:id="@+id/cl_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Client Email:"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:drawableLeft="@drawable/ic_email"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="#616161"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorAccent"
+                    android:id="@+id/cl_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:maxLines="1"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Client Request:"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp"/>
+                <EditText
+                    android:drawableLeft="@drawable/ic_receipt"
+                    android:drawablePadding="10dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorAccent"
+                    android:id="@+id/cl_case"
+                    android:gravity="center|left"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" />
+
+                <Button
+                    android:id="@+id/addCase"
+                    android:layout_marginTop="15dp"
+                    android:text="Send Case"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp"
+                    android:background="@drawable/btn_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

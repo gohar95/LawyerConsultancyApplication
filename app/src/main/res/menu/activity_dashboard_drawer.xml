@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Profile"
+            android:icon="@drawable/ic_profile"
+            android:title="My Profile" />
+       <!-- yaar yahan py 2 sacreen banien gi aek mein consultation ki request show or dusry mein hiring
+         swip kr ky ap dekh skty ho jis py request ayi ho -->
+        <item
+            android:id="@+id/nav_addBio"
+            android:icon="@drawable/ic_assignment"
+            android:title="Add Your Qualification" />
+        <item
+            android:id="@+id/nav_viewRequest"
+            android:icon="@drawable/ic_consultation"
+            android:title="View Requests" />
+        <item
+            android:id="@+id/nav_topratedlawyer"
+            android:icon="@drawable/ic_toprated"
+            android:title="View Qualification" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_logout"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

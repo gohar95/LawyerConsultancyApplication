@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Pak Legal</string>
+
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    // yahan py title or description change kr do saari welcome screen ka
+
+    <string name="slide_1_title"> Lawyer\'s Category </string>
+    <string name="slide_1_desc">Here, You can select lawyer according to your requirement, which is quite easy and time saving for you. </string>
+
+    <string name="slide_2_title">Consultation</string>
+    <string name="slide_2_desc">Here, The Lawyer and Client can consult with each other. They can discuss their cases. </string>
+
+    <string name="slide_3_title">Hiring</string>
+    <string name="slide_3_desc">Here, You can hire a lawyer according to your requirement.The Lawyers are categorised into catagories. </string>
+
+    <string name="slide_4_title">Ratings</string>
+    <string name="slide_4_desc">Here,The Client can provide ratings to Lawyer, also Lawyer can provide rating to the client.   </string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="places_api">
+   AIzaSyCn_Rpi7ierJ-yxJS-xCGSMfAjSfoz7_u4
+    </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_dashboard">Dashboard</string>
+    <string name="title_activity_client_dashboard">ClientDashboard</string>
+
+</resources>

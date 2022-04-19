@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "462906755576",
+    "firebase_url": "https://amreshpuri-2e65d-default-rtdb.firebaseio.com",
+    "project_id": "amreshpuri-2e65d",
+    "storage_bucket": "amreshpuri-2e65d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:462906755576:android:d49d94026d56a5d35eae0d",
+        "android_client_info": {
+          "package_name": "paklegal2020.pl.paklegal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "462906755576-q473ch99ijehut33kd9kdt0e7k479s40.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "paklegal2020.pl.paklegal",
+            "certificate_hash": "cbe269d4925a8d61f80dc086478da76f79ddb27e"
+          }
+        },
+        {
+          "client_id": "462906755576-3rbudvi72a16nnitneu7dg7upetk50p3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDI5LeCKzviKT0f_x7QFDfCj1lleMW_Hx8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "462906755576-3rbudvi72a16nnitneu7dg7upetk50p3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

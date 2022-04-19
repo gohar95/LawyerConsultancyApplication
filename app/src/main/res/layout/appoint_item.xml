@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:layout_width="match_parent"
+    android:layout_height="173dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center|left"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="5dp"
+        android:layout_height="170dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/lw_image"
+            android:layout_width="50dp"
+            android:layout_marginLeft="5dp"
+            app:civ_border_color="@color/colorBlack"
+            app:civ_border_width="1dp"
+            android:layout_gravity="center|top"
+            android:src="@drawable/ic_baseline_person_24"
+            android:layout_height="50dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginRight="5dp">
+
+            <TextView
+                android:layout_weight="1"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/case_title"
+                android:gravity="center|left"
+                android:textSize="18sp"
+                android:maxLines="3"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="75dp" />
+            <TextView
+                android:layout_weight="1"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/lw_name"
+                android:gravity="center|left"
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+            <TextView
+                android:layout_weight="1"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/lw_phone"
+                android:gravity="center|left"
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+            <TextView
+                android:layout_weight="1"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/app_date"
+                android:gravity="center|left"
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="60dp"
+        android:background="#9b9b9b"/>
+</LinearLayout>

@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/pdd"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#eaeaea"
+        android:gravity="center|left"
+        android:paddingLeft="10dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/logo_copy" />
+
+        <TextView
+            android:id="@+id/aaa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:gravity="center"
+            android:text="Select Lawyer Category"
+            android:textAllCaps="true"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/aaa"
+            android:layout_marginLeft="50dp"
+            android:gravity="center"
+            android:text="Select your Specialities"
+            android:textColor="@color/dot_dark_screen4"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/pdd">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/cat1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:checked="true"
+                android:paddingLeft="15dp"
+                android:text="Government Lawyers"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/cat2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:paddingLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Private Sector Lawyers"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/cat3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:paddingLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Trial Lawyers"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/cat4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:paddingLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Immigration Lawyers"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/cat5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:paddingLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Estate Planning Lawyers"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/cat6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:paddingLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Personal Injury Lawyers"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/cat7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:paddingLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Toxic Tort Lawyers"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/cat8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:paddingLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Public Interest Lawyers"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/cat9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:paddingLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Civil Rights Lawyers"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/cat10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:paddingLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Criminal Lawyers"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/cat11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:paddingLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Entertainment Lawyers"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/cat12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:paddingLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Real Estate Lawyers"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/cat13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:paddingLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Digital Media Lawyers"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/cat14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:paddingLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Legal Business Lawyers"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/cat15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:paddingLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Family Lawyers"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/cat16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:paddingLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Property Lawyers"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/cat17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:paddingLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Medical Lawyers"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/cat18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:paddingLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Administrative Lawyers"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/cat19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:paddingLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Authorative Lawyers"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/cat20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:paddingLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Aerospace and Aviation Lawyers"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/cat21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:paddingLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Arbitration Lawyers"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/cat22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:paddingLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Asset Search and Investigation Lawyers"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/cat23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:paddingLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Attestation and Legalization Lawyers"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/cat24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:paddingLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Military Lawyers"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/cat25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:paddingLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Drug Research Lawyers"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/cat26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:paddingLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Tax Management Lawyers"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/cat27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:paddingLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Degital Media Lawyers"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

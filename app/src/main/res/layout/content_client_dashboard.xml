@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="50dp"
+    android:background="#f5f5f5"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="paklegal2020.pl.paklegal.ClientSide.ClientDashboard"
+    tools:showIn="@layout/app_bar_client_dashboard">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/view_appoint"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:textSize="16sp"
+                android:textColor="@color/colorBlack"
+                android:gravity="center"
+                android:text="View Appointment"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:padding="5dp"
+                android:tint="@color/colorAccent"
+                app:srcCompat="@drawable/ic_right" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rere"
+            android:layout_marginHorizontal="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/view_appoint">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="2">
+                <Button
+                    android:text="Find Category"
+                    android:id="@+id/find_doc"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </Button>
+
+                <Button
+                    android:text="Find Lawyers"
+                    android:id="@+id/cons_online"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </Button>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="7dp"
+            android:layout_below="@+id/rere"
+            android:layout_marginHorizontal="15dp"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_height="35dp">
+
+            <androidx.cardview.widget.CardView
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                app:cardBackgroundColor="@color/colorWhite"
+                app:cardCornerRadius="7dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:padding="5dp"
+                    app:srcCompat="@drawable/ic_search"
+                    android:layout_width="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:hint="Search Here"
+                    android:id="@+id/search"
+                    android:background="@color/colorWhite"
+                    android:layout_marginLeft="35dp"
+                    android:gravity="center|left"
+                    android:paddingLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/search_recycler"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/lawyer_recycler"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+</LinearLayout>
